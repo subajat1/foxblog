@@ -3,6 +3,6 @@
 
 
 
-foxblog_project/blog/migrations
+foxblog_project/**/migrations
 foxblog_project/**/*.sqlite3
 *.sqlite3
