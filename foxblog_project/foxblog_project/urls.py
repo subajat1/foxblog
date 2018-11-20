@@ -21,4 +21,5 @@ urlpatterns = [
     path('', include('blog.urls')),
     path('admin/', admin.site.urls),
     path('register/', user_views.register, name='register'),
+    path(r'^webpush/', include('webpush.urls')),
 ]

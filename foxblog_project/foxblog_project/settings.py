@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
     'blog.apps.BlogConfig',
     'crispy_forms',
+    'webpush',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -123,3 +124,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+WEBPUSH_SETTINGS = {
+    "VAPID_PUBLIC_KEY": "BBtzU3nWlgA2dnzxQdvYzPci7F5xezLCk_nF-zjlAYfAXUVFaVR-Z_314AGegThr2LhkZppKus7rt2GtI0w5zOo",
+    "VAPID_PRIVATE_KEY":"Om-RePW52-g7znb41CNVKlbaXX9HSmgOipQPyV7v58g",
+    "VAPID_ADMIN_EMAIL": "bayumunajat@gmail.com"
+}
