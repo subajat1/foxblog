@@ -1,4 +1,5 @@
 {% load static %}
+{% load webpush_notifications %}
 <!doctype html>
 <html>
     <head>
@@ -9,8 +10,9 @@
         {%if title%}
             <title>{{ title }}</title>
         {%else%}
-            <title>FOX's Blog</title>
+            <title>Subscribe FOX</title>
         {%endif%}
+        {% webpush_header %}
     </head>
     <body>
         <header class="site-header">
@@ -35,6 +37,7 @@
             </nav>
         </header>
         <main role="main" class="container">
+            {% webpush_button %}
             <div class="row">
                 <div class="col-md-8">
                 {% if messages %}
