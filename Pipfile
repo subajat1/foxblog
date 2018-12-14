@@ -5,6 +5,11 @@ name = "pypi"
 
 [packages]
 django = "==1.11"
+django-crispy-forms = "*"
+pillow = "*"
+gunicorn = "*"
+psycopg2-binary = "*"
+pipfile = "*"
 
 [dev-packages]
 
